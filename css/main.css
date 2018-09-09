@@ -1,0 +1,102 @@
+.card{
+	/*border: 1px solid #0000004d;*/
+	border: none;
+	border-radius: 4px;
+	overflow: hidden;
+	position: relative;
+	font-family: 'Calibri';
+	min-height: 127px;
+	margin-top: 2em;
+	background-color: #e6f3ff99;
+	box-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+
+}
+
+.card-img-left{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 90%;
+	
+}
+
+.card-body{
+	overflow: hidden;
+	position: absolute;
+	top: 1.15em;
+	left: 23%;
+	width: 70%;
+}
+
+.card-link{
+	font-size: 19px;
+}
+
+.card-comment{
+	font-weight: lighter;
+	line-height: 0.9;
+	vertical-align: middle;
+	overflow-wrap: normal;
+	font-size: 13px;
+	font-family: Roboto;
+	white-space: nowrap;
+
+}
+
+.card-comment:hover{
+	overflow-wrap: normal;
+}
+
+.response-time{
+	vertical-align: top;
+}
+
+.card-header{
+	/*border: 1px solid #0000004d;*/
+	border-radius: 4px;
+	color: #4890d1;
+	background-color: rgba(134, 176, 235, 0.19);
+	padding: .25rem 0.75rem;
+}
+
+.card-header > h5{
+	margin-left: 2em;
+}
+
+
+.response-time{
+	font-size: 11px;
+	color: grey;
+}
+
+.card-img{
+	width: 27%;
+	padding-top: 5px;
+}
+
+.col-md-12{
+	display: inline-flex;
+
+}
+
+.lang-switch{
+	text-align: center;
+	border: 2px solid grey;
+	width: 35%;
+	margin: 0 auto;
+	float:left;
+	cursor: pointer;
+}
+
+.lang-switch:hover{
+	background-color: black;
+	color: white;
+}
+
+.social{
+	margin-top: 3em;
+}
+
+.lang h4{
+	margin-top: 2em;
+}
