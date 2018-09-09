@@ -72,7 +72,6 @@ function addCard(card,  container){
 								'</div>' + 
 							'</div>'; 
 
-
 }
 
 //render all cards to containers
@@ -94,6 +93,6 @@ function render(){
 
 document.addEventListener('DOMContentLoaded', function(){
 	//default lang
-	cellCount = 2;
+	cellCount = 3;
 	engSwitcher.click();
 });
