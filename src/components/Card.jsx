@@ -4,7 +4,6 @@ class Card extends Component {
   render() {
 
     const { name, link, label, logo, activity, comment } = this.props.card;
-
     return (
       <div className="col-md-4">
         <div className="card">
@@ -17,7 +16,7 @@ class Card extends Component {
             </div>
             <div className="card-content">
               <div className="card-label">
-                {label}
+                <a href={link}>{label}</a>
               </div>
               <div className="card-activity">
                 {activity}

@@ -23,13 +23,14 @@ class App extends Component {
   }
   render() {
     const { locale } = this.state;
-    const title = locale === 'ru' ? 'Социальные сети' : 'For communication';
+    const title = locale === 'ru' ? 'Для связи' : 'For communication';
     const otherTitle = locale === 'ru' ? 'Другие соц. сети' : 'Other social';
+    const langTitle = locale === 'ru' ? 'Язык' : 'Language';
     return (
       <div className="content container">
         <div className="lang col-md-4">
           <div>
-            <h4>Language</h4>
+            <h4>{langTitle}</h4>
           </div>
           <div className="lang-switch ru" onClick={this.setRu} >Русский</div>
           <div className="lang-switch en" onClick={this.setEn}>English</div>
