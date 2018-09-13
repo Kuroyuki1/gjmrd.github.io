@@ -1,4 +1,17 @@
-.lang-switch{
+body {
+	font-family: 'SFThin';
+}
+
+h1, h4 {
+	font-family: 'SFBold';
+	margin-top: 1em;
+}
+
+.lang {
+	padding: 0;
+}
+
+.lang-switch {
 	text-align: center;
 	border: 2px solid grey;
 	width: 35%;
@@ -7,27 +20,49 @@
 	cursor: pointer;
 }
 
-.lang-switch:hover{
-	background-color: black;
+.lang-switch.ru {
+	border-radius: 20px 0 0 20px;
+}
+
+.lang-switch.en {
+	border-radius: 0 20px 20px 0;
+}
+
+.lang-switch:hover {
+	background-color:#bbbbbb;
 	color: white;
 }
 
 .social h1 {
 	margin: 1.5em auto;
+	margin-bottom: 0.5em;
 }
 
 
 .card {
-background-color: #def7fc;
-box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, .4);
-border: none;
-margin-top: 20px;
+	background-color: rgba(242,242,242,0.7);
+	box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, .4);
+	border: none;
+	margin-top: 20px;
+	transition: 500ms;
 }
+
+.card:hover {
+	box-shadow: 25px 15px 2px 2px rgba(0, 0, 0, 0.40);
+}
+
+
 .card-title {
-	height: 20px;
+	height: 40px;
+	background-color:rgba(215,215,215,1);
+	padding: 0.5em 0.5em;
 }
 .card-body {
 	display: flex;
+	padding-top: 0;
+	padding-bottom: 0.5rem;
+	padding-left: 0.5rem;
+	padding-right: 0.5rem;
 }
 .card-logo {
 	width: 30%;
@@ -38,7 +73,8 @@ margin-top: 20px;
 }
 
 .card-content {
-	margin-left: 1rem;
+	margin-left: 0.5rem;
+	padding-right: 0.2rem;
 }
 
 .card-activity {
@@ -50,3 +86,13 @@ margin-top: 20px;
 	font-size: 14px;
 	overflow-wrap: unset;
 } 
+
+@font-face {
+	font-family: 'SFBold';
+	src: url('./fonts/sm SFNSDisplay-Bold.ttf');
+}
+
+@font-face {
+	font-family: 'SFThin';
+	src: url('./fonts/SF-UI/SF-UI-Display-Regular.otf');
+}
