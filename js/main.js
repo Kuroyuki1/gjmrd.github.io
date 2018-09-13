@@ -1,18 +1,3 @@
-localization = {
-	lang : {
-		ru : 'Язык',
-		en : 'Language',
-	},
-	socialTitle : {
-		ru : 'Для связи',
-		en : 'For communication',
-	},
-	otherSocialTitle : {
-		ru : 'Остальные соц. сети',
-		en : 'Other social'
-	}
-}
-
 //setting listeners to language switchers
 socialTitle = document.querySelector('.social h1');
 otherSocialTitle = document.querySelector('#other-social h1');
