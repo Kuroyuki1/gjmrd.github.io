@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
-import Card from './components/Card';
-import social from './json/social.json';
-import otherSocial from './json/otherSocial.json';
+import SocialBlock from './components/SocialBlock';
+import otherSocial from './json/cards/en/otherSocial.json';
+import social from './json/cards/en/social.json';
+import ruLocale from './json/localization/ru-Ru.json';
+import enLocale from './json/localization/en-En.json';
 import './css/bootstrap.min.css';
 import './App.css';
-
 
 
 class App extends Component {
@@ -23,9 +24,7 @@ class App extends Component {
   }
   render() {
     const { locale } = this.state;
-    const title = locale === 'ru' ? 'Для связи' : 'For communication';
-    const otherTitle = locale === 'ru' ? 'Другие соц. сети' : 'Other social';
-    const langTitle = locale === 'ru' ? 'Язык' : 'Language';
+    const {socialTitle, otherSocialTitle, langTitle} = locale == 'ru' ? ruLocale : enLocale;
     return (
       <div className="content container">
         <div className="lang col-md-4">
@@ -35,24 +34,9 @@ class App extends Component {
           <div className="lang-switch ru" onClick={this.setRu} >Русский</div>
           <div className="lang-switch en" onClick={this.setEn}>English</div>
         </div>
-        <div className="social">
-          <h1>{title}</h1>
-          <div className="row">
-            {social.map((card) => {
-              return <Card key={card.name} card={card} />;
-            })}
-          </div>
-        </div>
-        <div className="social other-social">
-          <h1>{otherTitle}</h1>
-          <div className="row">
-            {otherSocial.map((card) => {
-              return <Card key={card.name} card={card} />;
-            })}
-          </div>
-        </div>
+        <SocialBlock key={1} social={social} title={socialTitle}/>
+        <SocialBlock key={2} social={otherSocial} title={otherSocialTitle}/>
       </div>
-    
     );
   }
 }
