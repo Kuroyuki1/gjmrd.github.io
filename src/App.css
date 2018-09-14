@@ -45,6 +45,11 @@ h1, h4 {
 	border: none;
 	margin-top: 20px;
 	transition: 500ms;
+	height: 160px;
+}
+
+.card a {
+	color: black;
 }
 
 .card:hover {
@@ -59,17 +64,18 @@ h1, h4 {
 }
 .card-body {
 	display: flex;
+	padding: 0.5em;
 	padding-top: 0;
-	padding-bottom: 0.5rem;
-	padding-left: 0.5rem;
-	padding-right: 0.5rem;
 }
 .card-logo {
-	width: 30%;
+	display: block;
+	width: 100px;
+	height: 100px;
 }
 
-.card-logo img{
-	width: 100%;
+.card-logo img {
+	width: inherit;
+	height: inherit;
 }
 
 .card-content {
@@ -84,7 +90,6 @@ h1, h4 {
 
 .card-comment {
 	font-size: 14px;
-	overflow-wrap: unset;
 } 
 
 @font-face {

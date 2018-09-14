@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import SocialBlock from './components/SocialBlock';
-import otherSocial from './json/cards/en/otherSocial.json';
-import social from './json/cards/en/social.json';
+import enOtherSocial from './json/cards/en/otherSocial.json';
+import ruOtherSocial from './json/cards/en/otherSocial.json';
+import enSocial from './json/cards/en/social.json';
+import ruSocial from './json/cards/ru/social.json';
 import ruLocale from './json/localization/ru-Ru.json';
 import enLocale from './json/localization/en-En.json';
 import './css/bootstrap.min.css';
@@ -25,6 +27,8 @@ class App extends Component {
   render() {
     const { locale } = this.state;
     const {socialTitle, otherSocialTitle, langTitle} = locale == 'ru' ? ruLocale : enLocale;
+    const social = locale == 'ru' ? ruSocial : enSocial;
+    const otherSocial = locale == 'ru' ? ruOtherSocial : enOtherSocial;
     return (
       <div className="content container">
         <div className="lang col-md-4">
