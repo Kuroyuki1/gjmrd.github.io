@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import SocialBlock from './components/SocialBlock';
+import FooterBlock from './components/FooterBlock';
 import enOtherSocial from './json/cards/en/otherSocial.json';
 import ruOtherSocial from './json/cards/ru/otherSocial.json';
 import enSocial from './json/cards/en/social.json';
@@ -26,20 +27,23 @@ class App extends Component {
   }
   render() {
     const { locale } = this.state;
-    const {socialTitle, otherSocialTitle, langTitle} = locale == 'ru' ? ruLocale : enLocale;
+    const { socialTitle, otherSocialTitle, langTitle } = locale == 'ru' ? ruLocale : enLocale;
     const social = locale == 'ru' ? ruSocial : enSocial;
     const otherSocial = locale == 'ru' ? ruOtherSocial : enOtherSocial;
     return (
-      <div className="content container">
-        <div className="lang col-md-4">
-          <div>
-            <h4>{langTitle}</h4>
+      <div className="wrapper">
+        <div className="content container">
+          <div className="lang col-md-4">
+            <div>
+              <h4>{langTitle}</h4>
+            </div>
+            <div className="lang-switch ru" onClick={this.setRu}>Русский</div>
+            <div className="lang-switch en" onClick={this.setEn}>English</div>
           </div>
-          <div className="lang-switch ru" onClick={this.setRu}>Русский</div>
-          <div className="lang-switch en" onClick={this.setEn}>English</div>
+          <SocialBlock key={1} contacts={social} title={socialTitle} />
+          <SocialBlock key={2} contacts={otherSocial} title={otherSocialTitle} />
         </div>
-        <SocialBlock key={1} contacts={social} title={socialTitle}/>
-        <SocialBlock key={2} contacts={otherSocial} title={otherSocialTitle}/>
+        <FooterBlock />
       </div>
     );
   }
