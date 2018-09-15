@@ -8,22 +8,22 @@ const FooterBlock = () => (
                     Created by:
                 </li>
                 <li>
-                    <a href="https://github.com/gjmrd">
+                    <a href="https://github.com/gjmrd" target="_blank">
                         <u>@Gjmrd</u> - code
                     </a>
                 </li>
                 <li>
-                    <a href="https://github.com/MrModest">
+                    <a href="https://github.com/MrModest" target="_blank">
                         <u>@MrModest</u> - design
                     </a>
                 </li>
                 <li>
-                    <a href="https://github.com/bm12">
+                    <a href="https://github.com/bm12" target="_blank">
                         <u>@Bm12</u> - technical support
                     </a>
                 </li>
             </ul>
-            2018. OpenSource <a href="https://github.com/gjmrd/gjmrd.github.io"><u>(Source Code)</u></a>
+            2018. OpenSource <a href="https://github.com/gjmrd/gjmrd.github.io" target="_blank"><u>(Source Code)</u></a>
         </div>
     </div>
 )
