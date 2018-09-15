@@ -20,15 +20,27 @@ class App extends Component {
   state = {
     locale: 'ru',
   };
+  componentDidMount() {
+    const lang = navigator.language || navigator.userLanguage;
+    if (lang.toLowerCase().match('ru') === null) {
+      this.setState({ locale: 'en' });
+      document.title = "MrModest | Contacts";
+    } else {
+      document.title = "MrModest | Контакты";
+    }
+  }
   switchLanguage = (locale) => {
     this.setState({ locale });
     console.log(locale);
   };
   setRu = () => {
     this.switchLanguage('ru');
+    document.title = "MrModest | Контакты";
+    
   }
   setEn = () => {
     this.switchLanguage('en');
+    document.title = "MrModest | Contacts";
   }
   render() {
     const { locale } = this.state;
