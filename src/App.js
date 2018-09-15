@@ -38,8 +38,8 @@ class App extends Component {
           <div className="lang-switch ru" onClick={this.setRu}>Русский</div>
           <div className="lang-switch en" onClick={this.setEn}>English</div>
         </div>
-        <SocialBlock key={1} social={social} title={socialTitle}/>
-        <SocialBlock key={2} social={otherSocial} title={otherSocialTitle}/>
+        <SocialBlock key={1} contacts={social} title={socialTitle}/>
+        <SocialBlock key={2} contacts={otherSocial} title={otherSocialTitle}/>
       </div>
     );
   }

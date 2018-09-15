@@ -12,7 +12,7 @@
         "link" : "https://t.me/gjmrd",
         "label" : "Gjmrd",
         "logo" : "telegram.png",
-        "activity" : "1 день",
+        "activity" : "1 day",
         "comment" : "I check the messages here several times a day"
     },
     {
@@ -28,7 +28,7 @@
         "link" : "https://github.com/gjmrd",
         "label" : "Gjmrd",
         "logo" : "github.png",
-        "activity" : "1-2 дня",
+        "activity" : "1-2 days",
         "comment" : "All code here"
     }
 ]
