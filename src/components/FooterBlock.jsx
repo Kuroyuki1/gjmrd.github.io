@@ -5,6 +5,9 @@ const FooterBlock = () => (
         <div className="container">
             <ul className="authors">
                 <li>
+                    Created by:
+                </li>
+                <li>
                     <a href="https://githib.com/gjmrd">
                         <u>@Gjmrd</u> - code
                     </a>
@@ -20,7 +23,7 @@ const FooterBlock = () => (
                     </a>
                 </li>
             </ul>
-            2018. OpenSource<u><a href="https://github.com/gjmrd/gjmrd.github.io"> (Source Code)</a></u>
+            2018. OpenSource <a href="https://github.com/gjmrd/gjmrd.github.io" target="_blank"><u>(Source Code)</a></u>
         </div>
     </div>
 )
