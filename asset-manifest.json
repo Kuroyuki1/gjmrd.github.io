@@ -1,8 +1,15 @@
 {
   "main.css": "static/css/main.73e8e53a.css",
   "main.css.map": "static/css/main.73e8e53a.css.map",
-  "main.js": "static/js/main.0fbc9c9d.js",
-  "main.js.map": "static/js/main.0fbc9c9d.js.map",
+  "main.js": "static/js/main.b35e614f.js",
+  "main.js.map": "static/js/main.b35e614f.js.map",
+  "static\\media\\BattleNet.ico": "static/media/BattleNet.323deab6.ico",
   "static\\media\\SF-UI-Display-Regular.otf": "static/media/SF-UI-Display-Regular.3f37c5de.otf",
-  "static\\media\\sm SFNSDisplay-Bold.ttf": "static/media/sm SFNSDisplay-Bold.a9e4f259.ttf"
+  "static\\media\\discord.png": "static/media/discord.7f1a4a7f.png",
+  "static\\media\\github.png": "static/media/github.9ac279f9.png",
+  "static\\media\\gmail.png": "static/media/gmail.847c083c.png",
+  "static\\media\\instagram.png": "static/media/instagram.4a8c2347.png",
+  "static\\media\\sm SFNSDisplay-Bold.ttf": "static/media/sm SFNSDisplay-Bold.a9e4f259.ttf",
+  "static\\media\\steam.png": "static/media/steam.0c1bf7f4.png",
+  "static\\media\\telegram.png": "static/media/telegram.473b9e3e.png"
 }
