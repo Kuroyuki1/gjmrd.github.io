@@ -8,7 +8,7 @@ const FooterBlock = () => (
                     Created by:
                 </li>
                 <li>
-                    <a href="https://githib.com/gjmrd">
+                    <a href="https://github.com/gjmrd">
                         <u>@Gjmrd</u> - code
                     </a>
                 </li>
