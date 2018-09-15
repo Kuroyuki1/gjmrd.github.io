@@ -2,25 +2,25 @@
     {
         "name" : "Vk",
         "link" : "https://vk.com/gjmrd",
-        "label" : "Gadjimurad Magomedov",
+        "label" : "Гаджимурад Магомедов",
         "logo" : "vk.png",
-        "activity" : "10-30 minutes",
-        "comment" : "The easiest way to contact me"
+        "activity" : "10-30 минут",
+        "comment" : "Самый лёгкий способ связаться со мной"
     },
     {
         "name" : "Telegram",
         "link" : "https://t.me/gjmrd",
         "label" : "Gjmrd",
         "logo" : "telegram.png",
-        "activity" : "1 day",
-        "comment" : "I check the messages here several times a day"
+        "activity" : "1 день",
+        "comment" : "Заглядываю несколько раз в течение дня"
     },
     {
         "name" : "Discord",
         "link" : "Gjmrd#3893",
         "label" : "Gjmrd#3893",
         "logo" : "discord.png",
-        "activity" : "2-3 days",
+        "activity" : "2-3 дня",
         "comment" : ""
     },
     {
@@ -28,7 +28,7 @@
         "link" : "https://github.com/gjmrd",
         "label" : "Gjmrd",
         "logo" : "github.png",
-        "activity" : "1-2 days",
-        "comment" : "All code here"
+        "activity" : "1-2 дня",
+        "comment" : "Сюда сбрасываю весь код"
     }
 ]
