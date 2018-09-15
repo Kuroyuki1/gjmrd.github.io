@@ -1,26 +1,34 @@
 [
     {
-        "name" : "ВКонтакте",
-        "link" : "https://vk.com/mrm0dest",
-        "label" : "Камиль Бабаев",
+        "name" : "Vk",
+        "link" : "https://vk.com/gjmrd",
+        "label" : "Gadjimurad Magomedov",
         "logo" : "vk.png",
-        "activity" : "1 час",
-        "comment" : "Самый лёгкий способ связаться со мной, если вы не знаете мой номер."
+        "activity" : "10-30 minutes",
+        "comment" : "The easiest way to contact me"
     },
     {
         "name" : "Telegram",
-        "link" : "https://t.me/MrModest",
-        "label" : "MrModest",
+        "link" : "https://t.me/gjmrd",
+        "label" : "Gjmrd",
         "logo" : "telegram.png",
-        "activity" : "1 день",
-        "comment" : "Иногда могут быть проблемы с получением уведомлений."
+        "activity" : "1 day",
+        "comment" : "I check the messages here several times a day"
     },
     {
-        "name" : "Gmail",
-        "link" : "mailto:babaevkamil@gmail.com",
-        "label" : "babaevkamil@gmail.com",
-        "logo" : "gmail.png",
-        "activity" : "1 день",
-        "comment" : "Любые вопросы."
+        "name" : "Discord",
+        "link" : "Gjmrd#3893",
+        "label" : "Gjmrd#3893",
+        "logo" : "discord.png",
+        "activity" : "2-3 days",
+        "comment" : ""
+    },
+    {
+        "name" : "Github",
+        "link" : "https://github.com/gjmrd",
+        "label" : "Gjmrd",
+        "logo" : "github.png",
+        "activity" : "1-2 days",
+        "comment" : "All code here"
     }
 ]
