@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import SocialBlock from './components/SocialBlock';
 import enOtherSocial from './json/cards/en/otherSocial.json';
-import ruOtherSocial from './json/cards/en/otherSocial.json';
+import ruOtherSocial from './json/cards/ru/otherSocial.json';
 import enSocial from './json/cards/en/social.json';
 import ruSocial from './json/cards/ru/social.json';
 import ruLocale from './json/localization/ru-Ru.json';
@@ -35,7 +35,7 @@ class App extends Component {
           <div>
             <h4>{langTitle}</h4>
           </div>
-          <div className="lang-switch ru" onClick={this.setRu} >Русский</div>
+          <div className="lang-switch ru" onClick={this.setRu}>Русский</div>
           <div className="lang-switch en" onClick={this.setEn}>English</div>
         </div>
         <SocialBlock key={1} social={social} title={socialTitle}/>

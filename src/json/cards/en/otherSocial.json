@@ -1,34 +1,34 @@
 [
     {
-        "name" : "Vk",
-        "link" : "https://vk.com/gjmrd",
-        "label" : "Гаджимурад Магомедов",
-        "logo" : "https://upavla.ru/wp-content/uploads/2018/04/rubus/vk.png",
-        "activity" : "any time",
-        "comment" : "very very very very very log comment"
+        "name" : "Gmail",
+        "link" : "mailto:magomedovgh@gmail.com",
+        "label" : "Gadjimurad Magomedov",
+        "logo" : "https://png.icons8.com/color/1600/gmail.png",
+        "activity" : "1 day",
+        "comment" : "You can write here about the work or study"
     },
     {
-        "name" : "Telegram",
-        "link" : "https://t.me/gjmrd",
+        "name" : "Instagram",
+        "link" : "https://instagram.com/gjmrd",
         "label" : "Gjmrd",
-        "logo" : "https://pngicon.ru/file/uploads/telegram.png",
-        "activity" : "one day",
-        "comment" : "very very very very very log comment"
+        "logo" : "https://image.flaticon.com/icons/png/512/174/174855.png",
+        "activity" : "1 day",
+        "comment" : "All photos here"
     },
     {
-        "name" : "Discord",
-        "link" : "Gjmrd#3893",
-        "label" : "Gjmrd#3893",
-        "logo" : "https://cdn6.aptoide.com/imgs/a/b/8/ab88671aa7e80b755c75ce6416b370ae_icon.png?w=256",
-        "activity" : "one day",
-        "comment" : "very very very very very log comment"
+        "name" : "Battle.net",
+        "link" : "MementoMori#21269",
+        "label" : "MementoMori#21269",
+        "logo" : "http://www.icons101.com/icon_ico/id_83247/BattleNet.ico",
+        "activity" : "1 day",
+        "comment" : "Overwatch/Hearthstone"
     },
     {
-        "name" : "Github",
-        "link" : "https://github.com/gjmrd",
+        "name" : "Steam",
+        "link" : "https://steamcommunity.com/id/gjmrd",
         "label" : "Gjmrd",
-        "logo" : "https://png.icons8.com/metro/1600/github.png",
-        "activity" : "one day",
-        "comment" : "very very very very very log comment"
+        "logo" : "http://cdn.onlinewebfonts.com/svg/img_224266.png",
+        "activity" : ">30 days",
+        "comment" : "I am very rare here"
     }
 ]

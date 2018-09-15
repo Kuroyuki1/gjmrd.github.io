@@ -12,16 +12,16 @@
         "link" : "https://t.me/gjmrd",
         "label" : "Gjmrd",
         "logo" : "https://pngicon.ru/file/uploads/telegram.png",
-        "activity" : "один день",
+        "activity" : "1 день",
         "comment" : "Заглядываю несколько раз в течение дня"
     },
     {
         "name" : "Discord",
         "link" : "Gjmrd#3893",
         "label" : "Gjmrd#3893",
-        "logo" : "https://cdn6.aptoide.com/imgs/a/b/8/ab88671aa7e80b755c75ce6416b370ae_icon.png?w=256",
-        "activity" : "1 день",
-        "comment" : "Пишите сюда если хотите поиграть"
+        "logo" : "https://cdn3.iconfinder.com/data/icons/popular-services-brands-vol-2/512/discord-512.png",
+        "activity" : "2-3 дня",
+        "comment" : ""
     },
     {
         "name" : "Github",

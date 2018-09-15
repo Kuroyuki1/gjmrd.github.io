@@ -2,33 +2,33 @@
     {
         "name" : "Vk",
         "link" : "https://vk.com/gjmrd",
-        "label" : "Гаджимурад Магомедов",
+        "label" : "Gadjimurad Magomedov",
         "logo" : "https://upavla.ru/wp-content/uploads/2018/04/rubus/vk.png",
-        "activity" : "any time",
-        "comment" : "very very very very very log comment"
+        "activity" : "10-30 minutes",
+        "comment" : "The easiest way to contact me"
     },
     {
         "name" : "Telegram",
         "link" : "https://t.me/gjmrd",
         "label" : "Gjmrd",
         "logo" : "https://pngicon.ru/file/uploads/telegram.png",
-        "activity" : "one day",
-        "comment" : "very very very very very log comment"
+        "activity" : "1 день",
+        "comment" : "I check the messages here several times a day"
     },
     {
         "name" : "Discord",
         "link" : "Gjmrd#3893",
         "label" : "Gjmrd#3893",
-        "logo" : "https://cdn6.aptoide.com/imgs/a/b/8/ab88671aa7e80b755c75ce6416b370ae_icon.png?w=256",
-        "activity" : "one day",
-        "comment" : "very very very very very log comment"
+        "logo" : "https://cdn3.iconfinder.com/data/icons/popular-services-brands-vol-2/512/discord-512.png",
+        "activity" : "2-3 days",
+        "comment" : ""
     },
     {
         "name" : "Github",
         "link" : "https://github.com/gjmrd",
         "label" : "Gjmrd",
         "logo" : "https://png.icons8.com/metro/1600/github.png",
-        "activity" : "one day",
-        "comment" : "very very very very very log comment"
+        "activity" : "1-2 дня",
+        "comment" : "All code here"
     }
 ]
