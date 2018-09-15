@@ -23,7 +23,7 @@ const FooterBlock = () => (
                     </a>
                 </li>
             </ul>
-            2018. OpenSource <a href="https://github.com/gjmrd/gjmrd.github.io"><u>(Source Code)</a></u>
+            2018. OpenSource <a href="https://github.com/gjmrd/gjmrd.github.io"><u>(Source Code)</u></a>
         </div>
     </div>
 )

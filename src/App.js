@@ -27,9 +27,9 @@ class App extends Component {
   }
   render() {
     const { locale } = this.state;
-    const { socialTitle, otherSocialTitle, langTitle } = locale == 'ru' ? ruLocale : enLocale;
-    const social = locale == 'ru' ? ruSocial : enSocial;
-    const otherSocial = locale == 'ru' ? ruOtherSocial : enOtherSocial;
+    const { socialTitle, otherSocialTitle, langTitle } = locale === 'ru' ? ruLocale : enLocale;
+    const social = locale === 'ru' ? ruSocial : enSocial;
+    const otherSocial = locale === 'ru' ? ruOtherSocial : enOtherSocial;
     return (
       <div className="wrapper">
         <div className="content container">

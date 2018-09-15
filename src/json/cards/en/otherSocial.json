@@ -5,7 +5,7 @@
         "label" : "mrm0dest",
         "logo" : "instagram.png",
         "activity" : "~",
-        "comment" : "Не очень часто, но порой выкладываю новые фото."
+        "comment" : "Sometimes posting new photos."
     },
     {
         "name" : "Discord",
@@ -13,7 +13,7 @@
         "label" : "MrModest#5720",
         "logo" : "discord.png",
         "activity" : "very rarely",
-        "comment" : "If you need me in Discord'е, invite me from another contact way."
+        "comment" : "If you need me in Discord, invite me from another contact way."
     },
     {
         "name" : "Github",
@@ -25,8 +25,8 @@
     },
     {
         "name" : "Steam",
-        "link" : "https://steamcommunity.com/id/gjmrd",
-        "label" : "Gjmrd",
+        "link" : "https://steamcommunity.com/id/mrmodest",
+        "label" : "MrModest",
         "logo" : "steam.png",
         "activity" : "1 month",
         "comment" : "Rarely be here. Almost don't play MMO games."
@@ -102,5 +102,5 @@
         "logo" : "pikabu.png",
         "activity" : " - ",
         "comment" : "For quite some time now I don't go to the site at all."
-    },
+    }
 ]

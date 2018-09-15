@@ -12,11 +12,11 @@ class Card extends Component {
           </div>
           <div className="card-body">
             <div className="card-logo">
-              <img src={require('../img/'+logo)} alt="" />
+              <img src={require('../img/'+logo)} alt={name} />
             </div>
             <div className="card-content">
               <div className="card-label">
-                <a href={link}>{label}</a>
+                <a href={link} target="_blank">{label}</a>
               </div>
               <div className="card-activity">
                 {activity}
