@@ -3,7 +3,7 @@
         "name" : "Gmail",
         "link" : "mailto:magomedovgh@gmail.com",
         "label" : "Gadjimurad Magomedov",
-        "logo" : "https://png.icons8.com/color/1600/gmail.png",
+        "logo" : "gmail.png",
         "activity" : "1 day",
         "comment" : "You can write here about the work or study"
     },
@@ -11,7 +11,7 @@
         "name" : "Instagram",
         "link" : "https://instagram.com/gjmrd",
         "label" : "Gjmrd",
-        "logo" : "https://image.flaticon.com/icons/png/512/174/174855.png",
+        "logo" : "instagram.png",
         "activity" : "1 day",
         "comment" : "All photos here"
     },
@@ -19,7 +19,7 @@
         "name" : "Battle.net",
         "link" : "MementoMori#21269",
         "label" : "MementoMori#21269",
-        "logo" : "http://www.icons101.com/icon_ico/id_83247/BattleNet.ico",
+        "logo" : "BattleNet.ico",
         "activity" : "1 day",
         "comment" : "Overwatch/Hearthstone"
     },
@@ -27,7 +27,7 @@
         "name" : "Steam",
         "link" : "https://steamcommunity.com/id/gjmrd",
         "label" : "Gjmrd",
-        "logo" : "http://cdn.onlinewebfonts.com/svg/img_224266.png",
+        "logo" : "steam.png",
         "activity" : ">30 days",
         "comment" : "I am very rare here"
     }

@@ -3,7 +3,7 @@
         "name" : "Vk",
         "link" : "https://vk.com/gjmrd",
         "label" : "Gadjimurad Magomedov",
-        "logo" : "https://upavla.ru/wp-content/uploads/2018/04/rubus/vk.png",
+        "logo" : "vk.png",
         "activity" : "10-30 minutes",
         "comment" : "The easiest way to contact me"
     },
@@ -11,7 +11,7 @@
         "name" : "Telegram",
         "link" : "https://t.me/gjmrd",
         "label" : "Gjmrd",
-        "logo" : "https://pngicon.ru/file/uploads/telegram.png",
+        "logo" : "telegram.png",
         "activity" : "1 день",
         "comment" : "I check the messages here several times a day"
     },
@@ -19,7 +19,7 @@
         "name" : "Discord",
         "link" : "Gjmrd#3893",
         "label" : "Gjmrd#3893",
-        "logo" : "https://cdn3.iconfinder.com/data/icons/popular-services-brands-vol-2/512/discord-512.png",
+        "logo" : "discord.png",
         "activity" : "2-3 days",
         "comment" : ""
     },
@@ -27,7 +27,7 @@
         "name" : "Github",
         "link" : "https://github.com/gjmrd",
         "label" : "Gjmrd",
-        "logo" : "https://png.icons8.com/metro/1600/github.png",
+        "logo" : "github.png",
         "activity" : "1-2 дня",
         "comment" : "All code here"
     }

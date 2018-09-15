@@ -12,7 +12,7 @@ class Card extends Component {
           </div>
           <div className="card-body">
             <div className="card-logo">
-              <img src={logo} alt="" />
+              <img src={require('../img/'+logo)} alt="" />
             </div>
             <div className="card-content">
               <div className="card-label">
