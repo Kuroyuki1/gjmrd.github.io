@@ -1,12 +1,17 @@
 import React, { Component } from 'react';
+
+import Description from './components/Description';
 import SocialBlock from './components/SocialBlock';
 import FooterBlock from './components/FooterBlock';
+
 import enOtherSocial from './json/cards/en/otherSocial.json';
 import ruOtherSocial from './json/cards/ru/otherSocial.json';
 import enSocial from './json/cards/en/social.json';
 import ruSocial from './json/cards/ru/social.json';
+
 import ruLocale from './json/localization/ru-Ru.json';
 import enLocale from './json/localization/en-En.json';
+
 import './css/bootstrap.min.css';
 import './App.css';
 
@@ -41,6 +46,10 @@ class App extends Component {
             <div className="lang-switch ru" onClick={this.setRu}>Русский</div>
             <div className="lang-switch en" onClick={this.setEn}>English</div>
           </div>
+          <br />
+          <hr />
+          <Description locale={locale} />
+          <hr />
           <SocialBlock key={1} contacts={social} title={socialTitle} />
           <SocialBlock key={2} contacts={otherSocial} title={otherSocialTitle} />
         </div>
