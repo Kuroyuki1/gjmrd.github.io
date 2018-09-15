@@ -30,7 +30,7 @@ class App extends Component {
     const { socialTitle, otherSocialTitle, langTitle } = locale === 'ru' ? ruLocale : enLocale;
     const social = locale === 'ru' ? ruSocial : enSocial;
     const otherSocial = locale === 'ru' ? ruOtherSocial : enOtherSocial;
-    document.title = locale === 'ru' ? "MrModest - Контакты" : "MrModest - Contacts";
+    document.title = locale === 'ru' ? "MrModest | Контакты" : "MrModest | Contacts";
     return (
       <div className="wrapper">
         <div className="content container">
