@@ -15,6 +15,8 @@ import enLocale from './json/localization/en-En.json';
 import './css/bootstrap.min.css';
 import './App.css';
 
+import axios from 'axios';
+
 
 class App extends Component {
   state = {
@@ -42,8 +44,18 @@ class App extends Component {
     const { locale } = this.state;
     const localization = locale === 'ru' ? ruLocale : enLocale; 
     const { socialTitle, otherSocialTitle, langTitle, documentTitle } = localization;
+
     const social = locale === 'ru' ? ruSocial : enSocial;
     const otherSocial = locale === 'ru' ? ruOtherSocial : enOtherSocial;
+
+    axios.get('/src/json/cards/ru/social.json')
+        .then(function (response){
+          console.log(response);
+        })
+        .catch( function (error){
+          console.log(error);
+        });
+
     document.title = documentTitle;
     return (
       <div className="wrapper">
