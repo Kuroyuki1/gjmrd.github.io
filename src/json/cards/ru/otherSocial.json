@@ -30,5 +30,21 @@
         "logo" : "steam.png",
         "activity" : ">30 дней",
         "comment" : "захожу очень редко"
+    },
+    {
+        "name" : "Shikimori",
+        "link" : "https://shikimori.org/Gjmrd",
+        "label" : "Gjmrd",
+        "logo" : "shikimori.png",
+        "activity" : ">7 days",
+        "comment" : "Редко бываю тут"
+    },
+    {
+        "name" : "MyAnimeList",
+        "link" : "https://myanimelist.net/profile/Gjmrd",
+        "label" : "Gjmrd",
+        "logo" : "myanimelist.png",
+        "activity" : ">30 days",
+        "comment" : "Обычно я использую shiki"
     }
 ]
