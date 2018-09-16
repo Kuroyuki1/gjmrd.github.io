@@ -40,7 +40,7 @@ class App extends Component {
   }
   render() {
     const { locale } = this.state;
-    const localization = locale === 'ru' ? ruLocale : enLocale; 
+    const localization = locale === 'ru' ? ruLocale : enLocale;
     const { socialTitle, otherSocialTitle, langTitle, documentTitle } = localization;
 
     const social = locale === 'ru' ? ruSocial : enSocial;
@@ -58,10 +58,6 @@ class App extends Component {
             <div className="lang-switch ru" onClick={this.setRu}>Русский</div>
             <div className="lang-switch en" onClick={this.setEn}>English</div>
           </div>
-          <br />
-          <hr />
-          <Description localization={localization} />
-          <hr />
           <SocialBlock contacts={social} title={socialTitle} />
           <SocialBlock contacts={otherSocial} title={otherSocialTitle} />
         </div>
