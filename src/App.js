@@ -39,7 +39,7 @@ class App extends Component {
     this.switchLanguage('en');
   }
   render() {
-    const locale = this.state.locale;
+    const { locale } = this.state;
     const localization = locale === 'ru' ? ruLocale : enLocale; 
     const { socialTitle, otherSocialTitle, langTitle, documentTitle } = localization;
     const social = locale === 'ru' ? ruSocial : enSocial;
