@@ -1,12 +1,17 @@
 import React, { Component } from 'react';
+
+import Description from './components/Description';
 import SocialBlock from './components/SocialBlock';
 import FooterBlock from './components/FooterBlock';
+
 import enOtherSocial from './json/cards/en/otherSocial.json';
 import ruOtherSocial from './json/cards/ru/otherSocial.json';
 import enSocial from './json/cards/en/social.json';
 import ruSocial from './json/cards/ru/social.json';
+
 import ruLocale from './json/localization/ru-Ru.json';
 import enLocale from './json/localization/en-En.json';
+
 import './css/bootstrap.min.css';
 import './App.css';
 
@@ -15,6 +20,14 @@ class App extends Component {
   state = {
     locale: 'ru',
   };
+  componentDidMount() {
+    const lang = navigator.language || navigator.userLanguage;
+    if (lang.toLowerCase().match('ru') === null) {
+      this.setEn();
+    } else {
+      this.setRu();
+    }
+  }
   switchLanguage = (locale) => {
     this.setState({ locale });
     console.log(locale);
@@ -26,10 +39,12 @@ class App extends Component {
     this.switchLanguage('en');
   }
   render() {
-    const { locale } = this.state;
-    const { socialTitle, otherSocialTitle, langTitle } = locale == 'ru' ? ruLocale : enLocale;
-    const social = locale == 'ru' ? ruSocial : enSocial;
-    const otherSocial = locale == 'ru' ? ruOtherSocial : enOtherSocial;
+    const locale = this.state.locale;
+    const localization = locale === 'ru' ? ruLocale : enLocale; 
+    const { socialTitle, otherSocialTitle, langTitle, documentTitle } = localization;
+    const social = locale === 'ru' ? ruSocial : enSocial;
+    const otherSocial = locale === 'ru' ? ruOtherSocial : enOtherSocial;
+    document.title = documentTitle;
     return (
       <div className="wrapper">
         <div className="content container">
@@ -40,8 +55,12 @@ class App extends Component {
             <div className="lang-switch ru" onClick={this.setRu}>Русский</div>
             <div className="lang-switch en" onClick={this.setEn}>English</div>
           </div>
-          <SocialBlock key={1} contacts={social} title={socialTitle} />
-          <SocialBlock key={2} contacts={otherSocial} title={otherSocialTitle} />
+          <br />
+          <hr />
+          <Description localization={localization} />
+          <hr />
+          <SocialBlock contacts={social} title={socialTitle} />
+          <SocialBlock contacts={otherSocial} title={otherSocialTitle} />
         </div>
         <FooterBlock />
       </div>

@@ -6,17 +6,18 @@ class Card extends Component {
     const { name, link, label, logo, activity, comment } = this.props.card;
     return (
       <div className="col-md-4">
+      <a href={link} target="_blank">
         <div className="card">
           <div className="card-title">
             {name}
           </div>
           <div className="card-body">
             <div className="card-logo">
-              <img src={require('../img/'+logo)} alt="" />
+              <img src={require('../img/'+logo)} alt={name} />
             </div>
             <div className="card-content">
               <div className="card-label">
-                <a href={link}>{label}</a>
+                {label}
               </div>
               <div className="card-activity">
                 {activity}
@@ -27,6 +28,7 @@ class Card extends Component {
             </div>
           </div>
         </div>
+        </a>
       </div>
     );
   }
