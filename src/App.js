@@ -35,14 +35,6 @@ class App extends Component {
     this.state.ruLocale = JSON.parse(request('GET', '/src/json/localization/ru-Ru.json').getBody());
     this.state.enLocale = JSON.parse(request('GET', '/src/json/localization/en-En.json').getBody()); 
 
-   /* axios.get('/src/json/cards/ru/social.json').then(response => this.state.ruSocial = response.data);
-    axios.get('/src/json/cards/ru/otherSocial.json').then(response => this.state.ruOtherSocial = response.data);
-
-    axios.get('/src/json/cards/en/social.json').then(response => this.state.enSocial = response.data);
-    axios.get('/src/json/cards/en/otherSocial.json').then(response => this.state.enOtherSocial = response.data);
-
-    axios.get('/src/json/localization/ru-Ru.json').then(response => this.state.ruLocale = response.data);
-    axios.get('/src/json/localization/en-En.json').then(response => this.state.enLocale = response.data);*/
   }
   
   switchLanguage = (locale) => {
@@ -58,10 +50,11 @@ class App extends Component {
   render() {
     const { locale, ruLocale, enLocale, ruSocial, ruOtherSocial, enSocial, enOtherSocial } = this.state;
     const localization = locale === 'ru' ? ruLocale : enLocale;
-  /*  if (!localization) return null; */
+  
     const { socialTitle, otherSocialTitle, langTitle, documentTitle } = localization;
 
     const social = locale === 'ru' ? ruSocial : enSocial;
+
     const otherSocial = locale === 'ru' ? ruOtherSocial : enOtherSocial;
 
     document.title = documentTitle;
@@ -71,6 +64,7 @@ class App extends Component {
           <div className="lang col-md-4">
             <div>
               <h4>{langTitle}</h4>
+              <Description />
             </div>
             <div className="lang-switch ru" onClick={this.setRu}>Русский</div>
             <div className="lang-switch en" onClick={this.setEn}>English</div>
