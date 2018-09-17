@@ -31,7 +31,7 @@ class App extends Component {
 
     axios.get('/src/json/localization/ru-Ru.json').then(response => this.state.ruLocale = response.data);
     axios.get('/src/json/localization/en-En.json').then(response => this.state.enLocale = response.data);
-
+    
   }
   switchLanguage = (locale) => {
     this.setState({ locale });
