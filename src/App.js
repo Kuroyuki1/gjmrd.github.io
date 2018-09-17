@@ -4,20 +4,8 @@ import Description from './components/Description';
 import SocialBlock from './components/SocialBlock';
 import FooterBlock from './components/FooterBlock';
 
-/*
-import ruLocale from './json/localization/ru-Ru.json';
-import enLocale from './json/localization/en-En.json';
-
-import ruSocial from './json/cards/ru/social.json';
-import ruOtherSocial from './json/cards/ru/otherSocial.json';
-
-import enSocial from './json/cards/en/social.json';
-import enOtherSocial from './json/cards/en/otherSocial.json';
-*/
-
 import './css/bootstrap.min.css';
 import './App.css';
-
 
 
 class App extends Component {
@@ -44,7 +32,6 @@ class App extends Component {
 
     this.state.ruLocale = JSON.parse(request('GET', '/src/json/localization/ru-Ru.json').getBody());
     this.state.enLocale = JSON.parse(request('GET', '/src/json/localization/en-En.json').getBody());
-    
   }
   
   switchLanguage = (locale) => {
@@ -59,7 +46,6 @@ class App extends Component {
   }
   render() {
     const { locale, ruLocale, enLocale, ruSocial, ruOtherSocial, enSocial, enOtherSocial } = this.state;
-    console.log(this.state);
     const localization = locale === 'ru' ? ruLocale : enLocale;
     const { socialTitle, otherSocialTitle, langTitle, documentTitle } = localization;
 
