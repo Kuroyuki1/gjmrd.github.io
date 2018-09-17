@@ -31,10 +31,10 @@ class App extends Component {
     this.state.enOtherSocial = JSON.parse(request('GET', '/src/json/cards/en/otherSocial.json').getBody());
 
     this.state.ruLocale = JSON.parse(request('GET', '/src/json/localization/ru-Ru.json').getBody());
-    this.state.enLocale = JSON.parse(request('GET', '/src/json/localization/en-En.json').getBody()); 
+    this.state.enLocale = JSON.parse(request('GET', '/src/json/localization/en-En.json').getBody());
 
   }
-  
+
   switchLanguage = (locale) => {
     this.setState({ locale });
     console.log(locale);
@@ -48,7 +48,7 @@ class App extends Component {
   render() {
     const { locale, ruLocale, enLocale, ruSocial, ruOtherSocial, enSocial, enOtherSocial } = this.state;
     const localization = locale === 'ru' ? ruLocale : enLocale;
-  
+
     const { socialTitle, otherSocialTitle, langTitle, documentTitle } = localization;
 
     const social = locale === 'ru' ? ruSocial : enSocial;
@@ -62,13 +62,13 @@ class App extends Component {
           <div className="lang col-md-4">
             <div>
               <h4>{langTitle}</h4>
-              <br />
-              <hr />
-              <Description localization={localization} />
-              <hr />
             </div>
             <div className="lang-switch ru" onClick={this.setRu}>Русский</div>
             <div className="lang-switch en" onClick={this.setEn}>English</div>
+            <br />
+            <hr />
+            <Description localization={localization} />
+            <hr />
           </div>
           <SocialBlock contacts={social} title={socialTitle} />
           <SocialBlock contacts={otherSocial} title={otherSocialTitle} />
