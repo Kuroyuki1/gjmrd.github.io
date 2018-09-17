@@ -36,14 +36,14 @@ class App extends Component {
   componentWillMount() {
     const request = require('sync-request');
 
-    this.state.ruSocial = request('GET', '/src/json/cards/ru/social.json').getBody();
-    this.state.ruOtherSocial = request('GET', '/src/json/cards/ru/otherSocial.json').getBody();
+    this.state.ruSocial = JSON.parse(request('GET', '/src/json/cards/ru/social.json').getBody());
+    this.state.ruOtherSocial = JSON.parse(request('GET', '/src/json/cards/ru/otherSocial.json').getBody());
 
-    this.state.enSocial = request('GET', '/src/json/cards/en/social.json').getBody();
-    this.state.enOtherSocial = request('GET', '/src/json/cards/en/otherSocial.json').getBody();
+    this.state.enSocial = JSON.parse(request('GET', '/src/json/cards/en/social.json').getBody());
+    this.state.enOtherSocial = JSON.parse(request('GET', '/src/json/cards/en/otherSocial.json').getBody());
 
-    this.state.ruLocale = request('GET', '/src/json/localization/ru-Ru.json').getBody();
-    this.state.enLocale = request('GET', '/src/json/localization/en-En.json').getBody();
+    this.state.ruLocale = JSON.parse(request('GET', '/src/json/localization/ru-Ru.json').getBody());
+    this.state.enLocale = JSON.parse(request('GET', '/src/json/localization/en-En.json').getBody());
     
   }
   
