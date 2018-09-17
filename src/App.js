@@ -64,7 +64,7 @@ class App extends Component {
               <h4>{langTitle}</h4>
               <br />
               <hr />
-              <Description />
+              <Description localization={localization} />
               <hr />
             </div>
             <div className="lang-switch ru" onClick={this.setRu}>Русский</div>
