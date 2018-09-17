@@ -4,6 +4,15 @@ import Description from './components/Description';
 import SocialBlock from './components/SocialBlock';
 import FooterBlock from './components/FooterBlock';
 
+import ruLocale from './json/localization/ru-Ru.json';
+import enLocale from './json/localization/en-En.json';
+
+import ruSocial from './json/cards/ru/social.json';
+import ruOtherSocial from './json/cards/ru/otherSocial.json';
+
+import enSocial from './json/cards/en/social.json';
+import enOtherSocial from './json/cards/en/otherSocial.json';
+
 import axios from 'axios';
 
 import './css/bootstrap.min.css';
@@ -23,7 +32,7 @@ class App extends Component {
       this.setRu();
     }
 
-    axios.get('./json/cards/ru/social.json').then(response => this.state.ruSocial = response.data);
+    axios.get('./json/cards/ru/social.json').then(response => console.log(response.data));
     axios.get('./json/cards/ru/otherSocial.json').then(response => this.state.ruOtherSocial = response.data);
 
     axios.get('./json/cards/en/social.json').then(response => this.state.enSocial = response.data);
@@ -44,7 +53,7 @@ class App extends Component {
     this.switchLanguage('en');
   }
   render() {
-    const { locale, ruLocale, enLocale, ruSocial, ruOtherSocial, enSocial, enOtherSocial } = this.state;
+    const { locale } = this.state;
     const localization = locale === 'ru' ? ruLocale : enLocale;
     const { socialTitle, otherSocialTitle, langTitle, documentTitle } = localization;
 
