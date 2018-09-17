@@ -32,7 +32,7 @@ class App extends Component {
       this.setRu();
     }
 
-    axios.get('./json/cards/ru/social.json').then(response => console.log(response.data));
+    axios.get('/src/json/cards/ru/social.json').then(response => console.log(response.data)).catch(error => console.log(error));
     axios.get('./json/cards/ru/otherSocial.json').then(response => this.state.ruOtherSocial = response.data);
 
     axios.get('./json/cards/en/social.json').then(response => this.state.enSocial = response.data);
