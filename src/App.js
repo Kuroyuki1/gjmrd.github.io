@@ -26,23 +26,23 @@ class App extends Component {
   componentWillMount() {
     const request = require('sync-request');
 
-  /*  this.state.ruSocial = JSON.parse(request('GET', '/src/json/cards/ru/social.json').getBody());
+    this.state.ruSocial = JSON.parse(request('GET', '/src/json/cards/ru/social.json').getBody());
     this.state.ruOtherSocial = JSON.parse(request('GET', '/src/json/cards/ru/otherSocial.json').getBody());
 
     this.state.enSocial = JSON.parse(request('GET', '/src/json/cards/en/social.json').getBody());
     this.state.enOtherSocial = JSON.parse(request('GET', '/src/json/cards/en/otherSocial.json').getBody());
 
     this.state.ruLocale = JSON.parse(request('GET', '/src/json/localization/ru-Ru.json').getBody());
-    this.state.enLocale = JSON.parse(request('GET', '/src/json/localization/en-En.json').getBody()); *///#endregion
+    this.state.enLocale = JSON.parse(request('GET', '/src/json/localization/en-En.json').getBody()); 
 
-    axios.get('/src/json/cards/ru/social.json').then(response => this.state.ruSocial = response.data);
+   /* axios.get('/src/json/cards/ru/social.json').then(response => this.state.ruSocial = response.data);
     axios.get('/src/json/cards/ru/otherSocial.json').then(response => this.state.ruOtherSocial = response.data);
 
     axios.get('/src/json/cards/en/social.json').then(response => this.state.enSocial = response.data);
     axios.get('/src/json/cards/en/otherSocial.json').then(response => this.state.enOtherSocial = response.data);
 
     axios.get('/src/json/localization/ru-Ru.json').then(response => this.state.ruLocale = response.data);
-    axios.get('/src/json/localization/en-En.json').then(response => this.state.enLocale = response.data);
+    axios.get('/src/json/localization/en-En.json').then(response => this.state.enLocale = response.data);*/
   }
   
   switchLanguage = (locale) => {
