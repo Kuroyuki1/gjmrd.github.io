@@ -36,14 +36,14 @@ class App extends Component {
   componentWillMount() {
     const request = require('sync-request');
 
-    this.state.ruSocial = request('GET', '/src/json/cards/ru/social.json');
-    this.state.ruOtherSocial = request('GET', '/src/json/cards/ru/otherSocial.json');
+    this.state.ruSocial = request('GET', '/src/json/cards/ru/social.json').data;
+    this.state.ruOtherSocial = request('GET', '/src/json/cards/ru/otherSocial.json').data;
 
-    this.state.enSocial = request('GET', '/src/json/cards/en/social.json');
-    this.state.enOtherSocial = request('GET', '/src/json/cards/en/otherSocial.json');
+    this.state.enSocial = request('GET', '/src/json/cards/en/social.json').data;
+    this.state.enOtherSocial = request('GET', '/src/json/cards/en/otherSocial.json').data;
 
-    this.state.ruLocale = request('GET', '/src/json/localization/ru-Ru.json');
-    this.state.enLocale = request('GET', '/src/json/localization/en-En.json');
+    this.state.ruLocale = request('GET', '/src/json/localization/ru-Ru.json').data;
+    this.state.enLocale = request('GET', '/src/json/localization/en-En.json').data;
     
   }
   
