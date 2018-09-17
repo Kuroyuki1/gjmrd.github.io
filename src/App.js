@@ -35,11 +35,11 @@ class App extends Component {
     this.state.ruLocale = JSON.parse(request('GET', '/src/json/localization/ru-Ru.json').getBody());
     this.state.enLocale = JSON.parse(request('GET', '/src/json/localization/en-En.json').getBody()); *///#endregion
 
-    axios.get('/src/json/card/ru/social.json').then(response => this.state.ruSocial = response);
-    axios.get('/src/json/card/ru/otherSocial.json').then(response => this.state.ruOtherSocial = response);
+    axios.get('/src/json/cards/ru/social.json').then(response => this.state.ruSocial = response);
+    axios.get('/src/json/cards/ru/otherSocial.json').then(response => this.state.ruOtherSocial = response);
 
-    axios.get('/src/json/card/en/social.json').then(response => this.state.enSocial = response);
-    axios.get('/src/json/card/en/social.json').then(response => this.state.enOtherSocial = response);
+    axios.get('/src/json/cards/en/social.json').then(response => this.state.enSocial = response);
+    axios.get('/src/json/cards/en/social.json').then(response => this.state.enOtherSocial = response);
 
     axios.get('/src/json/localization/ru-Ru.json').then(response => this.state.ruLocale = response);
     axios.get('/src/json/localization/en-En.json').then(response => this.state.enLocale = response);
