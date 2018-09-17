@@ -4,7 +4,7 @@ import Description from './components/Description';
 import SocialBlock from './components/SocialBlock';
 import FooterBlock from './components/FooterBlock';
 
-
+/*
 import ruLocale from './json/localization/ru-Ru.json';
 import enLocale from './json/localization/en-En.json';
 
@@ -13,7 +13,7 @@ import ruOtherSocial from './json/cards/ru/otherSocial.json';
 
 import enSocial from './json/cards/en/social.json';
 import enOtherSocial from './json/cards/en/otherSocial.json';
-
+*/
 
 import axios from 'axios';
 
@@ -33,7 +33,9 @@ class App extends Component {
     } else {
       this.setRu();
     }
+  }
 
+  componentWillMount() {
     axios.get('/src/json/cards/ru/social.json').then(response => this.state.ruSocial = response.data).catch(error => console.log(error));
     axios.get('/src/json/cards/ru/otherSocial.json').then(response => this.state.ruOtherSocial = response.data).catch(error => console.log(error));
 
@@ -42,8 +44,8 @@ class App extends Component {
 
     axios.get('/src/json/localization/ru-Ru.json').then(response => this.state.ruLocale = response.data).catch(error => console.log(error));
     axios.get('/src/json/localization/en-En.json').then(response => this.state.enLocale = response.data).catch(error => console.log(error));
-
   }
+  
   switchLanguage = (locale) => {
     this.setState({ locale });
     console.log(locale);
@@ -55,7 +57,7 @@ class App extends Component {
     this.switchLanguage('en');
   }
   render() {
-    const { locale/*, ruLocale, enLocale, ruSocial, ruOtherSocial, enSocial, enOtherSocial */} = this.state;
+    const { locale, ruLocale, enLocale, ruSocial, ruOtherSocial, enSocial, enOtherSocial } = this.state;
     const localization = locale === 'ru' ? ruLocale : enLocale;
     const { socialTitle, otherSocialTitle, langTitle, documentTitle } = localization;
 
