@@ -15,8 +15,6 @@ import enSocial from './json/cards/en/social.json';
 import enOtherSocial from './json/cards/en/otherSocial.json';
 */
 
-import axios from 'axios';
-
 import './css/bootstrap.min.css';
 import './App.css';
 
@@ -36,14 +34,17 @@ class App extends Component {
   }
 
   componentWillMount() {
-    axios.get('/src/json/cards/ru/social.json').then(response => this.state.ruSocial = response.data).catch(error => console.log(error));
-    axios.get('/src/json/cards/ru/otherSocial.json').then(response => this.state.ruOtherSocial = response.data).catch(error => console.log(error));
+    const request = require('sync-request');
 
-    axios.get('/src/json/cards/en/social.json').then(response => this.state.enSocial = response.data).catch(error => console.log(error));
-    axios.get('/src/json/cards/en/otherSocial.json').then(response => this.state.enOtherSocial = response.data).catch(error => console.log(error));
+    this.state.ruSocial = request('GET', '/src/json/cards/ru/social.json');
+    this.state.ruOtherSocial = request('GET', '/src/json/cards/ru/otherSocial.json');
 
-    axios.get('/src/json/localization/ru-Ru.json').then(response => this.state.ruLocale = response.data).catch(error => console.log(error));
-    axios.get('/src/json/localization/en-En.json').then(response => this.state.enLocale = response.data).catch(error => console.log(error));
+    this.state.enSocial = request('GET', '/src/json/cards/en/social.json');
+    this.state.enOtherSocial = request('GET', '/src/json/cards/en/otherSocial.json');
+
+    this.state.ruLocale = request('GET', '/src/json/localization/ru-Ru.json');
+    this.state.enLocale = request('GET', '/src/json/localization/en-En.json');
+    
   }
   
   switchLanguage = (locale) => {
