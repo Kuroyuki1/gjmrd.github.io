@@ -7,8 +7,6 @@ import FooterBlock from './components/FooterBlock';
 import './css/bootstrap.min.css';
 import './App.css';
 
-import axios from 'axios';
-
 
 class App extends Component {
   state = {
@@ -64,7 +62,10 @@ class App extends Component {
           <div className="lang col-md-4">
             <div>
               <h4>{langTitle}</h4>
+              <br />
+              <hr />
               <Description />
+              <hr />
             </div>
             <div className="lang-switch ru" onClick={this.setRu}>Русский</div>
             <div className="lang-switch en" onClick={this.setEn}>English</div>
