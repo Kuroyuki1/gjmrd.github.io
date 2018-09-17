@@ -59,6 +59,7 @@ class App extends Component {
   }
   render() {
     const { locale, ruLocale, enLocale, ruSocial, ruOtherSocial, enSocial, enOtherSocial } = this.state;
+    console.log(this.state);
     const localization = locale === 'ru' ? ruLocale : enLocale;
     const { socialTitle, otherSocialTitle, langTitle, documentTitle } = localization;
 
