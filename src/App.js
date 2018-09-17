@@ -4,16 +4,11 @@ import Description from './components/Description';
 import SocialBlock from './components/SocialBlock';
 import FooterBlock from './components/FooterBlock';
 
-import enOtherSocial from './json/cards/en/otherSocial.json';
-import ruOtherSocial from './json/cards/ru/otherSocial.json';
-import enSocial from './json/cards/en/social.json';
-import ruSocial from './json/cards/ru/social.json';
-
-import ruLocale from './json/localization/ru-Ru.json';
-import enLocale from './json/localization/en-En.json';
+import axios from 'axios';
 
 import './css/bootstrap.min.css';
 import './App.css';
+
 
 
 class App extends Component {
@@ -27,6 +22,16 @@ class App extends Component {
     } else {
       this.setRu();
     }
+
+    axios.get('/src/json/cards/ru/social.json').then(response => this.state.ruSocial = response.data);
+    axios.get('/src/json/cards/ru/otherSocial.json').then(response => this.state.ruOtherSocial = response.data);
+
+    axios.get('/src/json/cards/en/social.json').then(response => this.state.enSocial = response.data);
+    axios.get('/src/json/cards/en/otherSocial.json').then(response => this.state.enOtherSocial = response.data);
+
+    axios.get('/src/json/localization/ru-Ru.json').then(response => this.state.ruLocale = response.data);
+    axios.get('/src/json/localization/en-En.json').then(response => this.state.enLocale = response.data);
+
   }
   switchLanguage = (locale) => {
     this.setState({ locale });
@@ -39,13 +44,12 @@ class App extends Component {
     this.switchLanguage('en');
   }
   render() {
-    const { locale } = this.state;
+    const { locale, ruLocale, enLocale, ruSocial, ruOtherSocial, enSocial, enOtherSocial } = this.state;
     const localization = locale === 'ru' ? ruLocale : enLocale;
     const { socialTitle, otherSocialTitle, langTitle, documentTitle } = localization;
 
     const social = locale === 'ru' ? ruSocial : enSocial;
     const otherSocial = locale === 'ru' ? ruOtherSocial : enOtherSocial;
-
 
     document.title = documentTitle;
     return (
