@@ -41,8 +41,8 @@ class App extends Component {
     axios.get('/src/json/card/en/social.json').then(response => this.state.enSocial = response);
     axios.get('/src/json/card/en/social.json').then(response => this.state.enOtherSocial = response);
 
-    axios.get('/src/json/localization/ru-Ru.json').then(response => this.state.ruSocial = response);
-    axios.get('/src/json/localization/en-En.json').then(response => this.state.enSocial = response);
+    axios.get('/src/json/localization/ru-Ru.json').then(response => this.state.ruLocale = response);
+    axios.get('/src/json/localization/en-En.json').then(response => this.state.enLocale = response);
   }
   
   switchLanguage = (locale) => {
