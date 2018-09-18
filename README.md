@@ -1,4 +1,4 @@
- simple landing on react.js
+contacts page on react.js
 -----------------------------
 #  Installation
 ----------------------
