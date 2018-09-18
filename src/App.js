@@ -59,7 +59,7 @@ class App extends Component {
     return (
       <div className="wrapper">
         <div className="content container">
-          <div className="lang col-md-4">
+          <div className="lang col-md-6">
             <div>
               <h4>{langTitle}</h4>
             </div>
