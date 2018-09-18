@@ -16,12 +16,12 @@
         "comment" : "Заглядываю несколько раз в течение дня"
     },
     {
-        "name" : "Discord",
-        "link" : "Gjmrd#3893",
-        "label" : "Gjmrd#3893",
-        "logo" : "discord.png",
-        "activity" : "2-3 дня",
-        "comment" : ""
+        "name" : "Gmail",
+        "link" : "mailto:magomedovgh@gmail.com",
+        "label" : "Гаджимурад Магомедов",
+        "logo" : "gmail.png",
+        "activity" : "1 день",
+        "comment" : "Сюда можно писать по поводу работы или учёбы"
     },
     {
         "name" : "Github",
