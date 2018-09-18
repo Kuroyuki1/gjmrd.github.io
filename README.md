@@ -2,7 +2,7 @@
 -----------------------------
 #  Installation
 ----------------------
-clone this repo. To change the card information you should go to '/src/json/cards' 
+clone this repo and deploy. To change the card information you should go to '/src/json/cards' 
 To change localization phrases you should go to '/src/json/localization'. 
 You dont have to recompile project to commit the changes
 Changes will be loaded when page is refreshed. 
