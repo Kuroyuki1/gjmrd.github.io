@@ -22,23 +22,23 @@ class App extends Component {
       this.setRu();
     }
 
-    const ruSocial = (await axios.get('/src/json/cards/ru/social.json')).data;
-    const ruOtherSocial = (await axios.get('/src/json/cards/ru/otherSocial.json')).data;
+    const ruSocial = await axios.get('/src/json/cards/ru/social.json');
+    const ruOtherSocial = await axios.get('/src/json/cards/ru/otherSocial.json');
 
-    const enSocial = (await axios.get('/src/json/cards/en/social.json')).data;
-    const enOtherSocial = (await axios.get('/src/json/cards/en/otherSocial.json')).data;
+    const enSocial = await axios.get('/src/json/cards/en/social.json');
+    const enOtherSocial = await axios.get('/src/json/cards/en/otherSocial.json');
 
-    const ruLocale = (await axios.get('/src/json/localization/ru-Ru.json')).data;
-    const enLocale = (await axios.get('/src/json/localization/en-En.json')).data;
+    const ruLocale = await axios.get('/src/json/localization/ru-Ru.json');
+    const enLocale = await axios.get('/src/json/localization/en-En.json');
 
     this.state = {
       locale : this.state.locale,
-      ruSocial : ruSocial,
-      ruOtherSocial : ruOtherSocial,
-      enSocial : enSocial,
-      enOtherSocial : enOtherSocial,
-      ruLocale : ruLocale,
-      enLocale : enLocale
+      ruSocial : ruSocial.data,
+      ruOtherSocial : ruOtherSocial.data,
+      enSocial : enSocial.data,
+      enOtherSocial : enOtherSocial.data,
+      ruLocale : ruLocale.data,
+      enLocale : enLocale.data
     };
   }
 
