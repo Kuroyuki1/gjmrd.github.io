@@ -7,33 +7,31 @@ import FooterBlock from './components/FooterBlock';
 import './css/bootstrap.min.css';
 import './App.css';
 
+import axios from 'axios';
+
 
 class App extends Component {
   state = {
     locale: 'ru',
   };
-  componentDidMount() {
+  async componentDidMount() {
     const lang = navigator.language || navigator.userLanguage;
     if (lang.toLowerCase().match('ru') === null) {
       this.setEn();
     } else {
       this.setRu();
     }
+
+    this.state.ruSocial = await axios.get('/src/json/cards/ru/social.json').data;
+    this.state.ruOtherSocial = await axios.get('/src/json/cards/ru/otherSocial.json').data;
+
+    this.state.enSocial = await axios.get('/src/json/cards/en/social.json').data;
+    this.state.enOtherSocial = await axios.get('/src/json/cards/en/otherSocial.json').data;
+
+    this.state.ruLocale = await axios.get('/src/json/localization/ru-Ru.json').data;
+    this.state.enLocale = await axios.get('/src/json/localization/en-En.json').data;
   }
 
-  componentWillMount() {
-    const request = require('sync-request');
-
-    this.state.ruSocial = JSON.parse(request('GET', '/src/json/cards/ru/social.json').getBody());
-    this.state.ruOtherSocial = JSON.parse(request('GET', '/src/json/cards/ru/otherSocial.json').getBody());
-
-    this.state.enSocial = JSON.parse(request('GET', '/src/json/cards/en/social.json').getBody());
-    this.state.enOtherSocial = JSON.parse(request('GET', '/src/json/cards/en/otherSocial.json').getBody());
-
-    this.state.ruLocale = JSON.parse(request('GET', '/src/json/localization/ru-Ru.json').getBody());
-    this.state.enLocale = JSON.parse(request('GET', '/src/json/localization/en-En.json').getBody());
-
-  }
 
   switchLanguage = (locale) => {
     this.setState({ locale });
@@ -48,13 +46,13 @@ class App extends Component {
   render() {
     const { locale, ruLocale, enLocale, ruSocial, ruOtherSocial, enSocial, enOtherSocial } = this.state;
     const localization = locale === 'ru' ? ruLocale : enLocale;
-
+    if (!localization) return null;
     const { socialTitle, otherSocialTitle, langTitle, documentTitle } = localization;
 
     const social = locale === 'ru' ? ruSocial : enSocial;
-
+    if (!social) return null;
     const otherSocial = locale === 'ru' ? ruOtherSocial : enOtherSocial;
-
+    if (!otherSocial) return null;
     document.title = documentTitle;
     return (
       <div className="wrapper">
