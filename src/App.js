@@ -44,6 +44,7 @@ class App extends Component {
     this.switchLanguage('en');
   }
   render() {
+    console.log(this.state);
     const { locale, ruLocale, enLocale, ruSocial, ruOtherSocial, enSocial, enOtherSocial } = this.state;
     const localization = locale === 'ru' ? ruLocale : enLocale;
     if (!localization) return null;
