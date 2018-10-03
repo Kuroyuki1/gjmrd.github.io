@@ -55,13 +55,13 @@ class App extends Component {
 
     const { socialTitle, otherSocialTitle, langTitle, documentTitle } = localization;
     const social = locale === 'ru' ? ruSocial : enSocial;
-
+    
     if (!social) return null;
 
     const otherSocial = locale === 'ru' ? ruOtherSocial : enOtherSocial;
-
-    if (!otherSocial) return null;
     
+    if (!otherSocial) return null;
+
     document.title = documentTitle;
     return (
       <div className="wrapper">
