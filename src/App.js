@@ -22,14 +22,24 @@ class App extends Component {
       this.setRu();
     }
 
-    const ruSocial = (await axios.get('/src/json/cards/ru/social.json')).data;
-    const ruOtherSocial = (await axios.get('/src/json/cards/ru/otherSocial.json')).data;
+    const promisesArr = [
+      axios.get('/src/json/cards/ru/social.json'),
+      axios.get('/src/json/cards/ru/otherSocial.json'),
+      axios.get('/src/json/cards/en/social.json'),
+      axios.get('/src/json/cards/en/otherSocial.json'),
+      axios.get('/src/json/localization/ru-Ru.json'),
+      axios.get('/src/json/localization/en-En.json'),
+    ];
+    const responseArr = await Promise.all(promisesArr);
 
-    const enSocial = (await axios.get('/src/json/cards/en/social.json')).data;
-    const enOtherSocial = (await axios.get('/src/json/cards/en/otherSocial.json')).data;
+    const ruSocial = responseArr[0].data;
+    const ruOtherSocial = responseArr[1].data;
 
-    const ruLocale = (await axios.get('/src/json/localization/ru-Ru.json')).data;
-    const enLocale = (await axios.get('/src/json/localization/en-En.json')).data;
+    const enSocial = responseArr[2].data;
+    const enOtherSocial = responseArr[3].data;
+
+    const ruLocale = responseArr[4].data;
+    const enLocale = responseArr[5].data;
 
     this.setState({ ruSocial, ruOtherSocial, enSocial, enOtherSocial, ruLocale, enLocale });
   }
