@@ -4,11 +4,17 @@ import Description from './components/Description';
 import SocialBlock from './components/SocialBlock';
 import FooterBlock from './components/FooterBlock';
 
+import ruSocial from './json/cards/ru/social.json';
+import enSocial from './json/cards/en/social.json';
+
+import ruOtherSocial from './json/cards/ru/otherSocial.json';
+import enOtherSocial from './json/cards/en/otherSocial.json';
+
+import ruLocale from './json/localization/ru-Ru.json';
+import enLocale from './json/localization/en-En.json';
+
 import './css/bootstrap.min.css';
 import './App.css';
-
-import axios from 'axios';
-
 
 class App extends Component {
   state = {
@@ -22,29 +28,8 @@ class App extends Component {
       this.setRu();
     }
 
-    const promisesArr = [
-      axios.get('/src/json/cards/ru/social.json'),
-      axios.get('/src/json/cards/ru/otherSocial.json'),
-      axios.get('/src/json/cards/en/social.json'),
-      axios.get('/src/json/cards/en/otherSocial.json'),
-      axios.get('/src/json/localization/ru-Ru.json'),
-      axios.get('/src/json/localization/en-En.json'),
-    ];
-    const responseArr = await Promise.all(promisesArr);
-
-    const ruSocial = responseArr[0].data;
-    const ruOtherSocial = responseArr[1].data;
-
-    const enSocial = responseArr[2].data;
-    const enOtherSocial = responseArr[3].data;
-
-    const ruLocale = responseArr[4].data;
-    const enLocale = responseArr[5].data;
-
     this.setState({ ruSocial, ruOtherSocial, enSocial, enOtherSocial, ruLocale, enLocale });
   }
-
-
 
   switchLanguage = (locale) => {
     this.setState({ locale });
